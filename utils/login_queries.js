@@ -1,9 +1,9 @@
 const loginQuery = `
-        SELECT * from _user where user_email = ? AND is_user = ?
+        SELECT * from _User where user_email = ? AND is_user = ?
     `;
 
 const registerQuery = `
-        INSERT INTO _user SET ?
+        INSERT INTO _User SET ?
     `;
 
 module.exports = { loginQuery, registerQuery };
